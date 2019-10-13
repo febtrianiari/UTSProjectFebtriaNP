@@ -1,6 +1,7 @@
 package id.ac.polinema.utsprojectfebtrianp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,12 @@ public class halamanMenuUtama extends AppCompatActivity {
 
     public void handleJadwalBis(View view) {
         Intent intent = new Intent(this, JadwalBis.class);
+        startActivity(intent);
+    }
+
+
+    public void handlerDetailBis(View view) {
+        Intent intent = new Intent(this, JamHarga.class);
         startActivity(intent);
     }
 }
