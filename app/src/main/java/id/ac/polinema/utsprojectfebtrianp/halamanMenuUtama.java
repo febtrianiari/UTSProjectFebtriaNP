@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import id.ac.polinema.utsprojectfebtrianp.DetailBis.Pemesanan;
+
 public class halamanMenuUtama extends AppCompatActivity {
 
     @Override
@@ -22,7 +24,13 @@ public class halamanMenuUtama extends AppCompatActivity {
 
 
     public void handlerDetailBis(View view) {
-        Intent intent = new Intent(this, JamHarga.class);
+        Intent intent = new Intent(this, DetailBus.class);
         startActivity(intent);
+    }
+
+    public void handlerPesanTiket(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.FramePesan,new Pemesanan());
+        fragmentTransaction.commit();
     }
 }

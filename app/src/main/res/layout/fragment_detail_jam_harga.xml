@@ -7,7 +7,7 @@
     tools:context=".DetailBis.DetailJamHarga">
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/backgroundSolo"
         android:layout_width="303dp"
         android:layout_height="90dp"
         android:layout_marginTop="144dp"
@@ -23,9 +23,9 @@
         android:layout_height="44dp"
         android:text="Jam Keberangkatan : 19.00 Harga Tiket :  Rp.110.000,-"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundSolo"
         app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintStart_toStartOf="@+id/backgroundSolo"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
@@ -39,22 +39,22 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundSolo"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+        app:layout_constraintTop_toTopOf="@+id/backgroundSolo" />
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/backgroundJogja"
         android:layout_width="303dp"
         android:layout_height="90dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/backgroundd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+        app:layout_constraintTop_toBottomOf="@+id/backgroundSolo" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/backgroundBandung"
         android:layout_width="303dp"
         android:layout_height="90dp"
         android:layout_marginStart="12dp"
@@ -62,16 +62,16 @@
         android:layout_marginTop="8dp"
         android:src="@drawable/backgroundd"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+        app:layout_constraintTop_toBottomOf="@+id/backgroundJogja" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/backgroundBogor"
         android:layout_width="303dp"
         android:layout_height="90dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/backgroundd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+        app:layout_constraintTop_toBottomOf="@+id/backgroundBandung" />
 
     <TextView
         android:id="@+id/textView10"
@@ -86,8 +86,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="@+id/imageView18"
-        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+        app:layout_constraintStart_toStartOf="@+id/backgroundJogja"
+        app:layout_constraintTop_toTopOf="@+id/backgroundJogja" />
 
     <TextView
         android:id="@+id/textView11"
@@ -97,7 +97,7 @@
         android:layout_marginLeft="65dp"
         android:text="Jam Keberangkatan : 19.00          Harga Tiket :  Rp.130.000-Rp.180.000,-"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/backgroundJogja"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
@@ -111,10 +111,10 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundBandung"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView19" />
+        app:layout_constraintTop_toTopOf="@+id/backgroundBandung" />
 
     <TextView
         android:id="@+id/textView13"
@@ -122,7 +122,7 @@
         android:layout_height="35dp"
         android:text="Jam Keberangkatan : 13.30 Harga Tiket :  Rp.310.000,-"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundBandung"
         app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -138,8 +138,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="@+id/imageView20"
-        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+        app:layout_constraintStart_toStartOf="@+id/backgroundBogor"
+        app:layout_constraintTop_toTopOf="@+id/backgroundBogor" />
 
     <TextView
         android:id="@+id/textView15"
@@ -147,20 +147,10 @@
         android:layout_height="35dp"
         android:text="Jam Keberangkatan : 13.30 Harga Tiket :  Rp.220.000,-"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundBogor"
         app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/backgroundBogor"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Pemesanan Tiket"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
