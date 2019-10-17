@@ -1,21 +1,21 @@
 package id.ac.polinema.utsprojectfebtrianp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import id.ac.polinema.utsprojectfebtrianp.DetailBis.Pemesanan;
 
-public class halamanMenuUtama extends AppCompatActivity {
+public class halamanMenuUtama extends AppCompatActivity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_halaman_menu_utama);
     }
+
 
     public void handleJadwalBis(View view) {
         Intent intent = new Intent(this, JadwalBis.class);
@@ -29,8 +29,8 @@ public class halamanMenuUtama extends AppCompatActivity {
     }
 
     public void handlerPesanTiket(View view) {
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.FramePesan,new Pemesanan());
-        fragmentTransaction.commit();
+        Intent intent = new Intent(this, BookingPesanan.class);
+        startActivity(intent);
     }
+
 }

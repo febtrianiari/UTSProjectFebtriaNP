@@ -22,4 +22,10 @@ public class MainActivity extends AppCompatActivity {
     public void handleExit(View view) {
         finish();
     }
+
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
 }

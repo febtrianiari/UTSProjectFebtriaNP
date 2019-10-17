@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailBis.Pemesanan">
+    tools:context=".BookingPesanan">
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/backgroundd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -194,19 +194,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pesan"
+        android:onClick="handlePesan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_harga" />
-
-    <FrameLayout
-        android:id="@+id/FramePesan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

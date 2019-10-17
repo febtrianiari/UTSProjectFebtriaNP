@@ -22,11 +22,11 @@
         android:id="@+id/pesan_tiket"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="69dp"
         android:onClick="handlerPesanTiket"
-        android:text="Pesan"
+        android:text="Pemesanan Tiket"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/harga_tiket" />
 

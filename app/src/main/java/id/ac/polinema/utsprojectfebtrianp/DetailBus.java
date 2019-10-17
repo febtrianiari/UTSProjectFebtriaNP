@@ -3,11 +3,11 @@ package id.ac.polinema.utsprojectfebtrianp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import id.ac.polinema.utsprojectfebtrianp.DetailBis.DetailJamHarga;
-import id.ac.polinema.utsprojectfebtrianp.DetailBis.Pemesanan;
 
 public class DetailBus extends AppCompatActivity {
 
@@ -31,4 +31,8 @@ public class DetailBus extends AppCompatActivity {
     }
 
 
+    public void handlerGoBack(View view) {
+        Intent intent = new Intent(this, halamanMenuUtama.class);
+        startActivity(intent);
+    }
 }
