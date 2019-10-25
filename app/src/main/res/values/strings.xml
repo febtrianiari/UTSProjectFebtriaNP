@@ -2,5 +2,28 @@
     <string name="app_name">UTSProjectFebtriaNP</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    <string name="hello_blank_fragment">Hello blank fragment-->
+<!--    </string>-->
+    <string-array name="Kota">
+        <item>Solo</item>
+        <item>Jogja</item>
+        <item>Bandung</item>
+        <item>Bogor</item>
+    </string-array>
+    <string-array name="NamaBis">
+        <item>Santoso</item>
+        <item>Handoyo</item>
+        <item>Muncul</item>
+        <item>Zena</item>
+        <item>Safari Dharmaraya</item>
+        <item>Lorena</item>
+        <item>Pahala Kencana</item>
+        <item>Kramat Djati</item>
+    </string-array>
+    <string-array name="Harga">
+        <item>Rp. 110.000</item>
+        <item>Rp. 130.000</item>
+        <item>Rp. 310.000</item>
+        <item>Rp. 220.000</item>
+    </string-array>
 </resources>

@@ -7,23 +7,30 @@ public class PemesananTiket implements Parcelable {
     private String Nama;
     private String Nomor;
     private String Kota;
-    private String Namabis;
+    //private String Namabis;
     private int JumlahTiket;
     private int HargaTiket;
     private int TotalBayar;
 
-    public PemesananTiket(String Nama, String Nomor, String Kota, String Namabis, int JumlahTiket, int HargaTiket){
+    public PemesananTiket(String Nama, String Nomor, int JumlahTiket, int HargaTiket){
         this.Nama = Nama;
         this.Nomor = Nomor;
-        this.Kota = Kota;
-        this.Namabis = Namabis;
+        //this.Kota = Kota;
+        //this.Namabis = Namabis;
         this.JumlahTiket = JumlahTiket;
         this.HargaTiket = HargaTiket;
         this.TotalBayar = calculate();
     }
 
-
-
+//    private String Kota(){
+//        String Kota = "Solo";
+////        if(Kota == "Solo" && Kota =="Jogja"){
+////
+////        }else{
+////
+////        }
+//        return Kota;
+//    }
     private int calculate() {
         int hasil = JumlahTiket * HargaTiket;
         return hasil;
@@ -45,21 +52,21 @@ public class PemesananTiket implements Parcelable {
         Nomor = nomor;
     }
 
-    public String getKota() {
-        return Kota;
-    }
+//    public String getKota() {
+//        return Kota;
+//    }
+//
+//    public void setKota(String kota) {
+//        Kota = kota;
+//    }
 
-    public void setKota(String kota) {
-        Kota = kota;
-    }
-
-    public String getNamabis() {
-        return Namabis;
-    }
-
-    public void setNamabis(String namabis) {
-        Namabis = namabis;
-    }
+//    public String getNamabis() {
+//        return Namabis;
+//    }
+//
+//    public void setNamabis(String namabis) {
+//        Namabis = namabis;
+//    }
 
     public int getJumlahTiket() {
         return JumlahTiket;
@@ -96,8 +103,8 @@ public class PemesananTiket implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.Nama);
         dest.writeString(this.Nomor);
-        dest.writeString(this.Kota);
-        dest.writeString(this.Namabis);
+//        dest.writeString(this.Kota);
+//        dest.writeString(this.Namabis);
         dest.writeInt(this.JumlahTiket);
         dest.writeInt(this.HargaTiket);
         dest.writeInt(this.TotalBayar);
@@ -106,8 +113,8 @@ public class PemesananTiket implements Parcelable {
     protected PemesananTiket(Parcel in) {
         this.Nama = in.readString();
         this.Nomor = in.readString();
-        this.Kota = in.readString();
-        this.Namabis = in.readString();
+//        this.Kota = in.readString();
+//        this.Namabis = in.readString();
         this.JumlahTiket = in.readInt();
         this.HargaTiket = in.readInt();
         this.TotalBayar = in.readInt();
